@@ -1,0 +1,17 @@
+-- Haskell Playground 1.0
+let2int 'a'
+int2let 0
+
+shift 3 'a'
+shift 3 'z'
+
+encode 3 "haskell is fun"
+
+table !! 2
+
+freqs "abbcccddddeeeee"
+
+rotate 3 [1..5]
+
+crack "kdvnhoo lv ixq"
+crack "vscd mywzboroxcsyxc kbo ecopev"

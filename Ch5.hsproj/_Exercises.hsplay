@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+sum [x * x | x <- [1..100]]
+
+replicate' 3 True
