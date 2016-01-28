@@ -1,4 +1,15 @@
 -- Haskell Playground 1.0
+
 sum [x * x | x <- [1..100]]
 
 replicate' 3 True
+
+pyths 10
+
+factors 73
+
+perfects 500
+
+[(x, y) | x <- [1, 2, 3], y <- [4, 5, 6]]
+
+

@@ -6,6 +6,7 @@ shift 3 'a'
 shift 3 'z'
 
 encode 3 "haskell is fun"
+encode 3 "HASKELL IS FUN"
 
 table !! 2
 
