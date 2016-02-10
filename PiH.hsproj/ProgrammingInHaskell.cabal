@@ -1,0 +1,15 @@
+name: ProgrammingInHaskell
+version: 1.0
+cabal-version: 1.6
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+Executable pih
+  main-is: Chapter5/Ch5.hs
+  buildable: True
+  build-depends:
+      base -any
+  other-modules:
+      Ch6_Recursive_Functions.Ch6
+      Chapter5.Exercises
+      Chapter5.Caesar

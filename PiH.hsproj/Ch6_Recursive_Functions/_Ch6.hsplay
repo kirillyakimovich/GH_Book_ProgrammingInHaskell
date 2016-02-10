@@ -1,0 +1,24 @@
+-- Haskell Playground 1.0
+factorial 10
+factorial' 10
+10 `mult` 10
+
+let l = [1..3]
+product' l == product l
+length' l == length l
+
+reverse' l == reverse l
+
+l `append` (reverse' l)
+
+insert 3 [1, 2, 4, 5]
+
+isort [3,4, 1, 2, 5]
+
+zip ['a','b','c'] [1,2,3,4] == zip' ['a','b','c'] [1,2,3,4]
+
+qsort l
+
+even' 3
+
+evens "abcde"
