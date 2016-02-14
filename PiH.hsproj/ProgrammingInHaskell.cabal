@@ -10,6 +10,7 @@ Executable pih
   build-depends:
       base -any
   other-modules:
+      Ch6_Recursive_Functions.Exercises
       Ch6_Recursive_Functions.Ch6
       Chapter5.Exercises
       Chapter5.Caesar

@@ -1,0 +1,16 @@
+-- Haskell Playground 1.0
+3 |^ 0
+
+3 |^ 4
+
+and' [True, True, False]
+
+concat' [[True], [True]]
+
+replicate' -1 1
+replicate' 10 1
+
+[1, 2, 3, 4, 5] !!! 3
+
+elem' 1 [2, 3, 4]
+elem' 1 []
