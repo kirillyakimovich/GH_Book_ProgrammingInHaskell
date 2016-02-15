@@ -1,4 +1,4 @@
-module Ch6_Recursive_Functions.Ch6 where
+module Chapter6_Recursive_Functions.Main where
   
 factorial :: Int -> Int
 factorial n = product [1.. n]

@@ -1,4 +1,4 @@
-module Ch6_Recursive_Functions.Exercises where
+module Chapter6_Recursive_Functions.Exercises where
   
 -- 1
 (|^)     :: (Integral a, Integral b)  => a -> b -> a

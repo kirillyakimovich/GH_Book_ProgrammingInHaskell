@@ -1,0 +1,30 @@
+-- Haskell Playground 1.0
+import Data.Char
+
+add 1 3
+add' 1 3
+
+twice (*2) 3
+twice reverse [1, 2, 3]
+
+map' (+1) [1,3,5,7]
+map' isDigit ['a','1','b','2']
+
+map' (map' (+1)) [[1, 2, 3], [4, 5]]
+
+mapr (+1) [1,3,5,7]
+
+filter even [1..10]
+
+filterr even [1..10]
+
+sumsqreven [1..10]
+
+all' even [2,4,6,8]
+allr (<=5) [1, 2, 3, 4, 5]
+
+any' odd [2,4,6,8]
+anyr odd [2,4,6,8]
+
+takeWhiler isLower "abc def"
+dropWhiler isLower "abc def"
