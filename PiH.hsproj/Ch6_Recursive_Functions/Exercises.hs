@@ -32,5 +32,43 @@ elem'                      :: Eq a => a -> [a] -> Bool
 elem' _ []                 = False
 elem' x (y:ys) | x == y    = True
                | otherwise = elem' x ys
-              
+         
+-- 5
+     
+merge                           :: Ord a => [a] -> [a] -> [a]
+merge xs []                     = xs
+merge [] ys                     = ys
+merge (x:xs) (y:ys) | x <= y    = x : merge xs (y:ys)
+                    | otherwise = y : merge (x:xs) ys
+                    
+halve    :: Ord a => [a] -> ([a], [a])
+halve [] = ([], [])
+halve xs = (take mid xs, drop mid xs) 
+        where mid = (length xs) `div` 2
 
+msort         :: Ord a => [a] -> [a]
+msort []      = []
+msort [x] = [x]
+msort xs      = merge (msort (fst halved)) (msort (snd halved))
+            where halved = halve xs
+
+-- 6
+sum' :: Num a => [a] -> a
+sum' [] = 0
+sum' (x:xs) = x + sum xs
+
+take'          :: Int -> [a] -> [a]
+take' 0 _      = []
+take' n []     = error "Index too large"
+take' n (x:xs) = x: take' (n-1) xs
+
+last' :: [a] -> a
+last' [] = error "Empty list"
+last' [x] = x
+last' (_:xs) = last' xs
+
+
+
+
+
+                    
