@@ -1,4 +1,4 @@
-module Chapter5.Caesar where
+module Chapter5_List_comprehensions.Caesar where
   
 import Data.Char
 

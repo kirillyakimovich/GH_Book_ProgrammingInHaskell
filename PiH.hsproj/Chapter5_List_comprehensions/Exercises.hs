@@ -1,4 +1,4 @@
-module Chapter5.Exercises where
+module Chapter5_List_comprehensions.Exercises where
   
 replicate' :: Int -> a -> [a]
 replicate' n x = [ x | x' <- [1..n]]

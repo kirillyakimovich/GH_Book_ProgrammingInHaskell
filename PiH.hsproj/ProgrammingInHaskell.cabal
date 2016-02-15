@@ -5,13 +5,13 @@ build-type: Simple
 license: AllRightsReserved
 stability: experimental
 Executable pih
-  main-is: Chapter5/Main.hs
+  main-is: Chapter5_List_comprehensions/Main.hs
   buildable: True
   build-depends:
       base -any
   other-modules:
       Chapter6_Recursive_Functions.Exercises
       Chapter6_Recursive_Functions.Main
-      Chapter7__Higher_order_functions.Main
-      Chapter5.Exercises
-      Chapter5.Caesar
+      Chapter5_List_comprehensions.Exercises
+      Chapter5_List_comprehensions.Caesar
+      Chapter7_Higher_order_functions.Main

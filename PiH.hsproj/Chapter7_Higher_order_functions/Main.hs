@@ -1,4 +1,4 @@
-module Chapter7__Higher_order_functions.Main where
+module Chapter7_Higher_order_functions.Main where
  
 add     :: Int -> Int -> Int
 add x y = x + y

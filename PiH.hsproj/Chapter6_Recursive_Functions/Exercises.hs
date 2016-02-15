@@ -2,8 +2,8 @@ module Chapter6_Recursive_Functions.Exercises where
   
 -- 1
 (|^)     :: (Integral a, Integral b)  => a -> b -> a
-(|^) n 0 = 1
-(|^) n p = n * n |^ (p - 1)
+n |^ 0 = 1
+n |^ p = n * n |^ (p - 1)
 
 -- 2
 and'            :: [Bool] -> Bool
