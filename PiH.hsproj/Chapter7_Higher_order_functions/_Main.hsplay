@@ -28,3 +28,17 @@ anyr odd [2,4,6,8]
 
 takeWhiler isLower "abc def"
 dropWhiler isLower "abc def"
+
+sumf [1..100]
+productf [1..100]
+orf [True, False]
+andf [True, True]
+andf [True, False]
+
+sumf' [1..100]
+productf' [1..100]
+orf' [True, False]
+andf' [True, True]
+
+length' [1..100]
+reverse' [1..100]

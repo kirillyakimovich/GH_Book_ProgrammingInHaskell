@@ -56,4 +56,34 @@ dropWhiler _ []        = []
 dropWhiler p (x:xs)
            | p x       = dropWhiler p xs
            | otherwise = xs
+           
+-- 7.6
+sumf :: Num a => [a] -> a
+sumf [] = 0
+sumf (x:xs) = x + sumf xs
+
+productf :: Num a => [a] -> a
+productf [] = 1
+productf (x:xs) = x * productf xs
+
+orf :: [Bool] -> Bool
+orf [] = False
+orf (x:xs) = x || orf xs
+
+andf :: [Bool] -> Bool
+andf [] = True
+andf (x:xs) = x && andf xs
+
+sumf' = foldr (+) 0
+-- sumf' xs = foldr (+) 0 xs
+productf' = foldr (*) 1
+orf' = foldr (||) False
+andf' = foldr (&&) True
+
+foldr' :: (a -> b -> b) -> b -> [a] -> b
+foldr' f v [] = v
+foldr' f v (x:xs) = f x (foldr' f v xs)
+
+length' = foldr' (\ _ n -> 1 + n) 0
+reverse' = foldr' (\x xs -> xs ++ [x]) []
                     
