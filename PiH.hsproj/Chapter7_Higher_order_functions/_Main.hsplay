@@ -42,3 +42,14 @@ andf' [True, True]
 
 length' [1..100]
 reverse' [1..100]
+
+suml [1..100]
+sumfl [1..100]
+productfl [1..100]
+orfl [True, False]
+
+(/2) 4
+(2/) 4
+
+let l = [reverse, init, tail]
+compose l [1..10]

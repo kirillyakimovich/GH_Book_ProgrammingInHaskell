@@ -1,0 +1,13 @@
+-- Haskell Playground 1.0
+bin2int [1,0,1,1]
+int2bin 13
+(bin2int . make8 .int2bin)  13
+
+(concat . map (make8 . int2bin . ord))"ab"
+
+encode "ab"
+chop8 (encode "ab")
+
+decode [1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0]
+
+transmit "What a fun"

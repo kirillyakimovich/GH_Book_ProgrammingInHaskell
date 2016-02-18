@@ -86,4 +86,25 @@ foldr' f v (x:xs) = f x (foldr' f v xs)
 
 length' = foldr' (\ _ n -> 1 + n) 0
 reverse' = foldr' (\x xs -> xs ++ [x]) []
+
+--7.4
+suml = sum' 0
+        where
+          sum' v [] = v
+          sum' v (x:xs) = sum' (v + x) xs
+          
+sumfl = foldl (+) 0
+productfl = foldl (*) 1
+orfl = foldl (||) False
+andfl = foldl (&&) True
+
+foldl'            :: (a -> b -> a) -> a -> [b] -> a
+foldl' f v []     = v
+foldl' f v (x:xs) = foldl' f (f v x) xs 
                     
+--7.5 as composition is already defined, .|.
+(.|.) :: (b -> c) -> (a -> b) -> (a -> c)
+f .|. g = \x -> f (g x)
+
+compose :: [(a -> a)] -> (a -> a)
+compose = foldr (.) id
