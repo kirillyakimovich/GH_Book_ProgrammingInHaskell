@@ -14,5 +14,7 @@ Executable pih
       Chapter6_Recursive_Functions.Main
       Chapter5_List_comprehensions.Exercises
       Chapter5_List_comprehensions.Caesar
+      Chapter7_Higher_order_functions.Exercises
       Chapter7_Higher_order_functions.Main
+      Chapter7_Higher_order_functions.Ex8
       Chapter7_Higher_order_functions.String_transmitter

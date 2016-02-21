@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+(int2bin . ord) 'a'
+
+parity [1, 0, 1]
+encode "abc"
+encodep "abc"
+
+chop 1 [1..10]
+chop 3 [1..10]
